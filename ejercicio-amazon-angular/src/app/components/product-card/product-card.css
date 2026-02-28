@@ -9,6 +9,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
     cursor: pointer;
     flex: 1 1 calc(33.333% - 20px);
+    height: 120px;
 
 }
 
@@ -49,4 +50,20 @@
     background: #f3f4f6;
     padding: 2px 8px;
     border-radius: 4px;
+}
+
+.card-par {
+    background-color: #a24545 !important; /* Un rojo muy suave */
+}
+
+
+
+/* Si <app-product-card> tiene la clase .card-par, pinta el .product-card interno */
+:host(.card-par) .product-card {
+    background-color: rgb(255, 155, 155); /* Rojo suave */
+}
+
+/* Si <app-product-card> tiene la clase .card-impar, pinta el .product-card interno */
+:host(.card-impar) .product-card {
+    background-color: #dcdcdc; /* Azul suave */
 }
