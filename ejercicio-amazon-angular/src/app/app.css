@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #131921;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: tomato 2px solid;
+}
+
+main {
+    display: flex;
+}
+
+.formulario{
+    flex: 30%; 
+}
+
+.listado{
+    flex: 70%; 
+}
