@@ -27,6 +27,9 @@ export class ProductForm {
       const response = this.productService.insertProduct(this.newProduct);
       
       this.newProduct = {title: "",price: 0,quantity: 0};
+
+      console.log('Producto agregado:', response);
+      console.log('Lista actualizada de productos:', this.productService.getAllProducts());
       alert(response);
     } else{
       alert("Por favor, complete todos los campos del formulario.");

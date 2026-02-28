@@ -5,12 +5,12 @@
 }
 
 header{
-    background-color: #131921;
-    color: white;
+    background-color: hsl(60, 44%, 58%);
+    color: black;
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
-    border-bottom: tomato 2px solid;
+    border-bottom: black 0.5px solid;
 }
 
 main {
