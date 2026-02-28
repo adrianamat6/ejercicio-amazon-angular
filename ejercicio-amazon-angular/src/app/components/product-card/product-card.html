@@ -1,6 +1,9 @@
-<article class="product">
-    <h3>{{miProducto()?.title}}</h3>
-    <p>{{miProducto()?.price}}</p>
-    <p>{{miProducto()?.quantity}}</p>
+<article class="product-card">
+    <div class="product-info">
+        <h3>{{miProducto()?.title}}</h3>
+        <div class="product-details">
+            <span class="price">{{miProducto()?.price}} €</span>
+            <span class="stock">Stock: {{miProducto()?.quantity}}</span>
+        </div>
+    </div>
 </article>
-
