@@ -17,4 +17,9 @@ export class ProductsService {
       return 'Producto agregado correctamente';
   }; 
 
+  calculateTotalPrice(): number {
+    return this.products.reduce((total, product) => total + product.price * product.quantity, 0);
+  }
+  ; 
+
 }
