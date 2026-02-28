@@ -2,8 +2,8 @@
 <div>
     @for (product of misProductos(); track product.id; let esPar = $even; let esImpar = $odd) {
 
-        <!-- Recuerda pasar el dato al hijo si lo necesita -->
-        <app-product-card ></app-product-card>
+        <!-- Para pasarle el dato a la produc-card hacemos un input de este elemento padre (product-list) a su hijo (product-card)--> 
+        <app-product-card [miProducto]="product"></app-product-card>
     }
 </div> 
 
