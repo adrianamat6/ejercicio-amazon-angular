@@ -12,8 +12,9 @@ export class ProductsSevice {
   }
 
 
-  insertProduct(newProduct: IProduct): void {
+  insertProduct(newProduct: IProduct): string {
      this.products.push(newProduct);
+      return 'Producto agregado correctamente';
   }; 
 
 }
