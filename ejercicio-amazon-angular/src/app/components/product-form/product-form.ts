@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ProductsSevice } from '../../service/products.sevice';
+import { ProductsService } from '../../service/products.sevice';
 import { inject } from '@angular/core';
 import { IProduct } from '../../interfaces/iproduct.interface';
 
@@ -11,7 +11,7 @@ import { IProduct } from '../../interfaces/iproduct.interface';
   styleUrl: './product-form.css',
 })
 export class ProductForm {
-  productService = inject(ProductsSevice);
+  productService = inject(ProductsService);
 
   // 2. Variables para el formulario (Two-way binding)
   newProduct: IProduct = {

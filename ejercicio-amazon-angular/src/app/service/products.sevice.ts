@@ -4,7 +4,7 @@ import { PRODUCTS } from '../db/products.db';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductsSevice {
+export class ProductsService {
   private products:IProduct[] = PRODUCTS;
 
   getAllProducts(): IProduct[] {

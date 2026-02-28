@@ -1,1 +1,9 @@
-<p>product-list works!</p>
+
+<div>
+    @for (product of misProductos(); track product.id; let esPar = $even; let esImpar = $odd) {
+
+        <!-- Recuerda pasar el dato al hijo si lo necesita -->
+        <app-product-card ></app-product-card>
+    }
+</div> 
+
