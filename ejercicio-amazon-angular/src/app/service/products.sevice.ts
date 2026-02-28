@@ -6,6 +6,7 @@ import { PRODUCTS } from '../db/products.db';
 })
 export class ProductsService {
   private products:IProduct[] = PRODUCTS;
+  private id: number = 16;
 
   getAllProducts(): IProduct[] {
     return this.products;
@@ -13,7 +14,9 @@ export class ProductsService {
 
 
   insertProduct(newProduct: IProduct): string {
+    newProduct.id = this.id;
      this.products.push(newProduct);
+     this.id++;
       return 'Producto agregado correctamente';
   }; 
 
